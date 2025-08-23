@@ -1,0 +1,4 @@
+The quick brown fox jumps over the lazy dog. This pangram contains every
+letter of the English alphabet. It is often used for typographic display
+and test purposes, and has become a staple of design and testing.
+Pack my box with five dozen liquor jugs.

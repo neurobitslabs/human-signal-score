@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "originality_score"
+version = "0.1.0"
+description = "Prototype for computing a human signal score for textual datasets"
+
+keywords = ["AI", "data quality", "model collapse", "diversity", "entropy"]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Text Processing :: Linguistic",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+authors = [ { name="NeuroBits Labs", email="contact@neurobits.example" } ]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+dependencies = [
+    "scikit-learn>=1.0", 
+    "nltk>=3.6"
+]
+
+# Optional dependency groups
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "black>=23.1",
+    "ruff>=0.1.0"
+]
+
+[project.scripts]
+originality-score = "originality_score.cli:main"
+
+[tool.setuptools]
+packages = ["originality_score"]

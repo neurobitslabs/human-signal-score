@@ -1,4 +1,4 @@
-# Originality Score
+# Human Signal Score
 
 This repository provides a simple prototype for computing a **Human Signal Score** for textual datasets.
 
